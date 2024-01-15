@@ -9,7 +9,7 @@ Using curl, awk, xargs, and system package management, pkgs-lists provides lists
 ### Using a Remote URL
 
 ```bash
-curl -s <remote_url> | awk '! /^ *(#|$)/' | xargs -r -- sudo apt install
+xargs -a <(curl -s <remote_url> | awk '! /^ *(#|$)/') -r -- sudo apt install
 ```
 
 > [!IMPORTANT]
