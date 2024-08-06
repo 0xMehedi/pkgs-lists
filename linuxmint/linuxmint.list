@@ -35,6 +35,9 @@ qrencode
 ## QR Code / Bar Code Scanner and Decoder
 zbar-tools
 
+## Shell Parser, Formatter, and Interpreter
+shfmt
+
 ## System Information Tool
 neofetch
 
